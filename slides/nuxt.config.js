@@ -10,7 +10,7 @@ export default {
     host: '0.0.0.0', // default: localhost
     port: '5001'
   },
-  publicPath: '/cdio/slides/',
+
   target: 'static',
 
   head: {
@@ -68,7 +68,7 @@ export default {
    ** Build configuration
    */
   build: {
-    publicPath: '/public/',
+    publicPath: '/cdio/slides/public/',
 
     extractCSS: {
       ignoreOrder: true
