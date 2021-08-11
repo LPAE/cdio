@@ -1,0 +1,11 @@
+.page-enter-active,
+.page-leave-active {
+  transition: all var(--transition-duration-short);
+  translate: translate3d(0, 0, 0);
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 1rem, 0);
+}
+
