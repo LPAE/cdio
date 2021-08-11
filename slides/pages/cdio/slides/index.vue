@@ -3,11 +3,11 @@
     app-header
     .card-wrapper
       a.link(href="/cdio/slides/presentation/1.html")
-        app-card-slide(title="Primeira apresentação" :thumbnail="require('../assets/1.webp')")
+        app-card-slide(title="Primeira apresentação" :thumbnail="require('../../../assets/1.webp')")
       a.link(href="/cdio/slides/presentation/2.html")
-        app-card-slide(title="Segunda apresentação" :thumbnail="require('../assets/2.webp')")
+        app-card-slide(title="Segunda apresentação" :thumbnail="require('../../../assets/2.webp')")
       nuxt-link.link(to="/cdio/slides/presentation/3")
-        app-card-slide(title="Terceira apresentação" :thumbnail="require('../assets/3.webp')")
+        app-card-slide(title="Terceira apresentação" :thumbnail="require('../../../assets/3.webp')")
 </template>
 
 <script lang="ts">
