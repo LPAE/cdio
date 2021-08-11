@@ -1,0 +1,25 @@
+$body-font-weight: 400;
+
+$text-font-size: 14px;
+$text-font-size-secondary: 12px;
+
+$header-height: 3rem;
+
+$default-transitions:();
+
+/// Mixin append transtion
+///
+/// @author Geovane Schmitz
+/// @param {String} $transitions
+@mixin append-transition($transitions...) {
+  transition: join(
+    $default-transitions,
+    $transitions,
+    $separator: comma,
+    $bracketed: false
+  );
+}
+
+$content-border-radius: 5px;
+$outline-border-radius: 7px;
+$component-border-radius: 3px;

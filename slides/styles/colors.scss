@@ -1,0 +1,201 @@
+@import './common.scss';
+$teal: #0f5f5c;
+$red: #eb415a;
+$orange: #eb9241;
+$yellow: #ebdc41;
+$lime: #b3f339;
+$green: #41eb4e;
+$cyan: #41ebd2;
+$light-blue: #41abeb;
+$blue: #4c56e0;
+$purple: #9541eb;
+$pink: #e92b8e;
+$ifsc-green: #32a041;
+
+$error-color: #ac0c23;
+$primary: #006ad8;
+
+::selection {
+  background: var(--primary);
+  color: var(--color-on-primary);
+}
+
+:root {
+  //Slide colors
+  --primary: #006ad8;
+  --background: #d4e9ff;
+  --secondary: #00346c;
+  --text: rgba(0, 0, 0, 0.8);
+  --text-on-secondary: #d4e9ff;
+
+  //Color palette
+  --teal: #{$teal};
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --lime: #{$lime};
+  --green: #{$green};
+  --cyan: #{$cyan};
+  --light-blue: #{$light-blue};
+  --blue: #{$blue};
+  --purple: #{$purple};
+  --pink: #{$pink};
+  --ifsc-green: #{$ifsc-green};
+  //Transitions
+  --transition-duration-short: 0.15s;
+  --transition-duration: 0.25s;
+  --transition-duration-long: 0.4s;
+  //
+  --text-weight-bold: 700;
+  --text-weight-normal: 400;
+  --content-font-size: 12pt;
+}
+
+.LAYOUT-COLOR-SCHEME-LIGHT {
+  --error-color: #{$error-color};
+  --color-on-error: #{adjust-color($error-color, $lightness: 60)};
+  --outline-error-color: #{$error-color};
+  --outline-color: #{$primary};
+  //
+  --primary: #{$primary};
+  --primary-hover: #{adjust-color($primary, $lightness: -10)};
+  --primary-active: #{adjust-color($primary, $lightness: -20)};
+
+  --color-on-primary: #fff;
+  --color-on-primary-hover: #fff;
+  --color-on-primary-active: #{adjust-color($primary, $lightness: +20)};
+  //
+  $base-background: #f9fcff;
+  //
+  --page-background-color: #{$base-background};
+  --page-text-color: #000;
+  //
+  --content-background-color: #{adjust-color($base-background, $lightness: 20)};
+  --content-text-color: #000;
+  //
+  --accessibility-background-color: #000;
+  --accessibility-color: #fff;
+  //
+  --component-background-color: #{adjust-color($base-background, $lightness: -7, $saturation: -50)};
+  --component-text-color: #000;
+  //
+  --component-background-color-focus: #{adjust-color($primary, $alpha: -0.9)};
+  --component-text-color-focus: #{$primary};
+  //
+  --component-background-color-active: #ddd;
+  --component-text-color-active: #000;
+  //
+  --component-background-color-hover: #eee;
+  --component-text-color-hover: #000;
+  //
+  --component-background-color-disabled: #eee;
+  --component-text-color-disabled: #000;
+  //
+  --shadow1: 0 1rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.8
+    )};
+  --shadow2: 0 1rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.9
+    )};
+  --shadow3: 0 0.5rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.95
+    )};
+  //
+}
+
+.LAYOUT-COLOR-SCHEME-DARK {
+  $secondary-color: mix($primary, #fff, 10%);
+  $color-on-primary: $secondary-color;
+
+  $base-background: adjust-color($primary, $lightness: -50, $saturation: -65);
+  // Error colors
+  --error-color: #{$error-color};
+  --color-on-error: #{adjust-color(
+      $error-color,
+      $lightness: -24,
+      $saturation: -60
+    )};
+  // --------------- Page colors ---------------
+  --page-background-color: #{$base-background};
+  --page-text-color: #{$secondary-color};
+  --content-background-color: #{adjust-color($base-background, $lightness: -6)};
+  --content-text-color: #{$secondary-color};
+  // Outline
+  --outline-error-color: #{$error-color};
+  --outline-color: #{$secondary-color};
+
+  //
+  --accessibility-background-color: #000;
+  --accessibility-color: #{$secondary-color};
+  // --------------- Component colors ---------------
+  // Normal state
+  --component-background-color: #{adjust-color($base-background, $lightness: 16)};
+  --component-text-color: #{$secondary-color};
+  // Hover state
+  --component-background-color-hover: #{adjust-color(
+      $base-background,
+      $lightness: 20
+    )};
+  --component-text-color-hover: #{$secondary-color};
+  // Focus state
+  --component-background-color-focus: #{adjust-color(
+      $base-background,
+      $lightness: 5
+    )};
+  --component-text-color-focus: #{$secondary-color};
+  // Active state
+  --component-background-color-active: #{adjust-color(
+      $base-background,
+      $lightness: 30
+    )};
+  --component-text-color-active: #{$secondary-color};
+  // Disabled
+  --component-background-color-disabled: #{adjust-color(
+      $base-background,
+      $lightness: 5
+    )};
+  --component-text-color-disabled: #{adjust-color(
+      $base-background,
+      $lightness: 20
+    )};
+  // --------------- Primary components ---------------
+  // Normal state
+  --primary: #{$primary};
+  --color-on-primary: #{$color-on-primary};
+  // Hover state
+  --primary-hover: #{adjust-color($primary, $lightness: -5, $saturation: -5)};
+  --color-on-primary-hover: #{$secondary-color};
+  // Active state
+  --primary-active: #{adjust-color($primary, $lightness: -20, $saturation: -10)};
+  --color-on-primary-active: #{mix($color-on-primary, $primary)};
+  //
+  --shadow1: 0 1rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.8
+    )};
+  --shadow2: 0 1rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.9
+    )};
+  --shadow3: 0 0.5rem 1rem 0 #{adjust-color(
+      $base-background,
+      $lightness: -20,
+      $alpha: -0.95
+    )};
+}
+
+* {
+  @include append-transition();
+}
+
+*:focus {
+  outline: solid 2px var(--outline-color);
+}
