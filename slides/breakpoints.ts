@@ -115,7 +115,7 @@ export default [
   {
     index: 'first',
     label: '7',
-    title: 'Como os engenherios se movimentam?',
+    title: 'O que os engenheiros modernos fazem?',
     subtitle: '',
     topics: [
       {
@@ -140,7 +140,7 @@ export default [
   {
     index: 'first',
     label: '8',
-    title: 'Como os engenherios se movimentam?',
+    title: 'O que os engenheiros modernos fazem?',
     subtitle: '',
     topics: [
       {
@@ -162,7 +162,7 @@ export default [
   {
     index: 'first',
     label: '9',
-    title: 'Como os engenheiros se movimentam?',
+    title: 'O que os engenheiros modernos fazem?',
     subtitle: '',
     topics: [
       {
@@ -288,7 +288,8 @@ export default [
     topics: [
       {
         bullet: false,
-        text: 'Alguns fatores ganharam importância nesse novo contexto:'
+        text: 'Alguns fatores ganharam importância nesse novo contexto:',
+        size: 1.1
       },
       {
         text: 'Sustentabilidade - uma mudança do domínio do meio ambiente para a administração do meio ambiente.'
@@ -316,28 +317,37 @@ export default [
     topics: [
       {
         bullet: false,
+        size: 1.1,
+        y: -2,
         text: 'Se quisermos aproximar o ensino de engenharia à pratica profissional da engenharia, devemos definir a educação firmemente nos aspectos atemporais do contexto profissional:'
       },
       {
-        text: 'Foco nas necessidades dos clientes.'
+        text: 'Foco nas necessidades dos clientes.',
+        y: -2
       },
       {
-        text: 'Entrega de produtos, processos e sistemas.'
+        text: 'Entrega de produtos, processos e sistemas.',
+        y: -2
       },
       {
-        text: 'Incorporação de novas invenções e tecnologias.'
+        text: 'Incorporação de novas invenções e tecnologias.',
+        y: -2
       },
       {
-        text: 'Foco na solução, não nas disciplinas.'
+        text: 'Foco na solução, não nas disciplinas.',
+        y: -2
       },
       {
-        text: 'Trabalhar com outras pessoas.'
+        text: 'Trabalhar com outras pessoas.',
+        y: -2
       },
       {
-        text: 'Comunicação efetiva.'
+        text: 'Comunicação efetiva.',
+        y: -2
       },
       {
-        text: 'Trabalhar com recursos.'
+        text: 'Trabalhar com recursos.',
+        y: -2
       }
     ],
     images: []

@@ -2,12 +2,12 @@
   .index
     app-header
     .card-wrapper
-      a.link(href="/cdio/slides/presentation/1.html")
-        app-card-slide(title="Primeira apresentação" :thumbnail="require('../../../assets/1.webp')")
-      a.link(href="/cdio/slides/presentation/2.html")
-        app-card-slide(title="Segunda apresentação" :thumbnail="require('../../../assets/2.webp')")
-      nuxt-link.link(to="/cdio/slides/presentation/3")
-        app-card-slide(title="Terceira apresentação" :thumbnail="require('../../../assets/3.webp')")
+      a.link(href="/presentation/1.html")
+        app-card-slide(title="Primeira apresentação" :thumbnail="require('~/assets/1.webp')")
+      a.link(href="/presentation/2.html")
+        app-card-slide(title="Segunda apresentação" :thumbnail="require('~/assets/2.webp')")
+      nuxt-link.link(to="/presentation/3")
+        app-card-slide(title="Terceira apresentação" :thumbnail="require('~/assets/3.webp')")
 </template>
 
 <script lang="ts">
@@ -31,9 +31,10 @@ export default defineComponent({
 .card-wrapper {
   display: flex;
   width: 100vw;
-  height: calc(100vh - 56px);
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
 .link{
   text-decoration: none;

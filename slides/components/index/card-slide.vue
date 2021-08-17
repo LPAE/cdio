@@ -22,6 +22,7 @@ export default defineComponent({
   margin: 0.5rem;
   overflow: hidden;
   width: 350px;
+  max-width: calc(100vw - 1rem);
   box-shadow: var(--shadow1);
   &-thumbnail {
     width: 100%;

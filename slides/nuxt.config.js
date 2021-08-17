@@ -11,6 +11,10 @@ export default {
     port: '5001'
   },
 
+  router: {
+    base: '/cdio/slides/'
+  },
+
   target: 'static',
 
   head: {
@@ -68,7 +72,7 @@ export default {
    ** Build configuration
    */
   build: {
-    publicPath: '/cdio/slides/public/',
+    publicPath: '/public/',
 
     extractCSS: {
       ignoreOrder: true
