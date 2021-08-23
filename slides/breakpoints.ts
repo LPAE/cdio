@@ -71,10 +71,19 @@ export default [
     topics: [
       {
         bullet: false,
-        text: 'O engenheiro gerencia cronogramas, pessoas, área financeira, área técnica, entre outras atividades. Os engenheiros modernos devem desenvolver habilidades de gestão;',
+        text: 'O engenheiro gerencia <br>cronogramas, pessoas, área financeira, área técnica, entre outras atividades.',
         width: 45,
         x: 2,
-        y: 14,
+        y: 12,
+        size: 1.3
+      },
+      {
+        bullet: false,
+        text: 'Os engenheiros modernos devem desenvolver habilidades de gestão.',
+
+        width: 45,
+        x: 2,
+        y: 12,
         size: 1.3
       }
     ],
@@ -106,12 +115,20 @@ export default [
       {
         y: 1,
         bullet: false,
-        width: 39,
+        width: 50,
         size: 1.2,
-        text: 'O engenheiro deve ser flexível e estar em constante processo de aprender. <br> À medida que as tecnologias avançam, novas soluções surgem e obrigam os engenheiros a estuda-las e pesquisa-las no dia a dia na busca por soluções inteligentes e muitas vezes absolutamente inovadoras;'
+        text: 'O engenheiro deve ser flexível e estar<br> em constante processo de aprender.'
+      },
+      {
+        y: 1,
+        bullet: false,
+        width: 50,
+        size: 1.2,
+        text: 'À medida que as tecnologias avançam, novas soluções surgem e obrigam<br> os engenheiros a estudá-las e<br> pesquisá-las no dia a dia na busca<br>por soluções inteligentes e muitas vezes absolutamente inovadoras.'
       }
     ]
   },
+
   {
     index: 'first',
     label: '7',
@@ -119,17 +136,20 @@ export default [
     subtitle: '',
     topics: [
       {
+        y: 3,
         width: 50,
         size: 1.2,
-        text: 'Os engenheiros modernos definem o escopo do dispositivo ou sistema e ajudam a criar o conceito. Dizemos que eles estão envolvidos na concepção do dispositivo ou sistema.'
+        text: 'Os engenheiros modernos definem o escopo do dispositivo ou sistema e ajudam a criar o conceito.'
       },
       {
+        y: 3,
         width: 70,
         size: 1.2,
 
         text: 'Engenheiros modernos projetam produtos, processos e sistemas que incorporam tecnologia de forma sustentável.'
       },
       {
+        y: 3,
         width: 70,
         size: 1.2,
         text: 'Os engenheiros conduzem e, em alguns casos, executam a implementação do design até a realização real do produto, processo ou sistema.'
@@ -144,11 +164,7 @@ export default [
     subtitle: '',
     topics: [
       {
-        text: 'Para oferecer um benefício a um membro da sociedade, dispositivos e sistemas de engenharia devem ser operados.',
-        size: 1.15
-      },
-      {
-        text: 'Produtos de consumo, como fogões, carros ou laptops, são operados por usuários particulares. Sistemas mais complexos, como fornos industriais, aeronaves ou redes de comunicação, são operados por profissionais.',
+        text: 'Produtos de consumo, como fogões, carros ou laptops, são operados por usuários leigos. Sistemas mais complexos, como fornos industriais, aeronaves ou redes de comunicação, são operados por profissionais.',
         size: 1.15
       },
       {
@@ -166,8 +182,13 @@ export default [
     subtitle: '',
     topics: [
       {
-        text: 'Para conceber, projetar, implementar e operar produtos, processos e sistemas, bons engenheiros trabalham em equipes e se comunicam com eficácia. Eles pensam de forma criativa e crítica e agem com responsabilidade e usam uma série de outras habilidades pessoais e profissionais.',
+        text: 'Para conceber, projetar, implementar e operar produtos, processos e sistemas, bons engenheiros trabalham em equipes e se comunicam com eficácia.',
         size: 1.2
+      },
+      {
+        text: 'Eles necessitam de habilidades, pessoais e profissionais, para trabalhar de forma colaborativa.',
+        size: 1.2
+
       }
     ],
     images: [require('./assets/slides3/slides/10.svg')]
@@ -175,7 +196,7 @@ export default [
   {
     index: 'first',
     label: '10',
-    title: 'Visão geral da abordagem CDIO',
+    title: 'Visão geral da "Abordagem CDIO"',
     subtitle: '',
     topics: [
       {
@@ -189,7 +210,7 @@ export default [
   {
     index: 'first',
     label: '11',
-    title: 'Objetivos gerais da "abordagem CDIO"',
+    title: 'Objetivos gerais da "Abordagem CDIO"',
     subtitle: '',
     topics: [
       {
@@ -244,7 +265,7 @@ export default [
   {
     index: 'first',
     label: '13',
-    title: 'Onde surgiu a "Abordagem CDIO" ?',
+    title: 'Onde surgiu a "Abordagem CDIO"?',
     subtitle: '',
     topics: [
       {
