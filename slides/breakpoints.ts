@@ -288,16 +288,16 @@ export default [
         size: 1.1
       },
       {
-        text: 'Conceber: Definindo as necessidades do cliente, considerando tecnologia, estratégia empresarial e regulamentos e desenvolvimento de planos conceituais, técnicos e de negócios'
+        text: '<strong style="color: var(--primary);">Conceber</strong>: Definindo as necessidades do cliente, considerando tecnologia, estratégia empresarial e regulamentos e desenvolvimento de planos conceituais, técnicos e de negócios.'
       },
       {
-        text: 'Projetar: Criação da descrição detalhada da informação do projeto; os planos, desenhos e algoritmos que descrevem o sistema a ser implementado'
+        text: '<strong style="color: var(--primary);">Projetar</strong>: Criação da descrição detalhada da informação do projeto; os planos, desenhos e algoritmos que descrevem o sistema a ser implementado.'
       },
       {
-        text: 'Implementar a transformação do design no produto, processo ou sistema, incluindo hardware fabricação, codificação de software, teste e validação'
+        text: '<strong style="color: var(--primary);">Implementar</strong> a transformação do design no produto, processo ou sistema, incluindo hardware fabricação, codificação de software, teste e validação.'
       },
       {
-        text: 'Operar, usando o produto, processo ou sistema implementado para entregar o valor pretendido, incluindo manutenção, evolução, reciclagem e desativação do sistema'
+        text: '<strong style="color: var(--primary);">Operar</strong>, usando o produto, processo ou sistema implementado para entregar o valor pretendido, incluindo manutenção, evolução, reciclagem e desativação do sistema.'
       }
     ]
   },
@@ -313,19 +313,19 @@ export default [
         size: 1.1
       },
       {
-        text: 'Sustentabilidade - uma mudança do domínio do meio ambiente para a administração do meio ambiente.'
+        text: '<strong style="color: var(--primary);">Sustentabilidade</strong> - uma mudança do domínio do meio ambiente para a administração do meio ambiente.'
       },
       {
-        text: 'Globalização - competição internacional e cooperação e distribuição de atividades de engenharia'
+        text: '<strong style="color: var(--primary);">Globalização</strong> - competição internacional e cooperação e distribuição de atividades de engenharia.'
       },
       {
-        text: 'Inovação - ênfase na entrega de novos bens e serviços.'
+        text: '<strong style="color: var(--primary);">Inovação</strong> - ênfase na entrega de novos bens e serviços.'
       },
       {
-        text: 'Liderança - uma nova ênfase nos engenheiros como líderes nas organizações.'
+        text: '<strong style="color: var(--primary);">Liderança</strong> - uma nova ênfase nos engenheiros como líderes nas organizações.'
       },
       {
-        text: 'Empreendedorismo - a criação de novas empresas e o impacto econômico regional que isso acarreta.'
+        text: '<strong style="color: var(--primary);">Empreendedorismo</strong> - a criação de novas empresas e o impacto econômico regional que isso acarreta.'
       }
     ],
     images: []

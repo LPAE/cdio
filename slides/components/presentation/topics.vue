@@ -7,7 +7,7 @@ div.wrapper
       'font-size': topic.size + 'em',\
       transform: `translate3d(${topic.x||0/(topic.size ||1)}em, ${topic.y||0/(topic.size ||1)}em, 0)` \
       }" :key="index" :class="{'bullet': !(topic.bullet == false) }")
-      span(v-html="topic.text")
+      span.line(v-html="topic.text")
   .list.list-2(:class='{"list-disable": currentTopics !== 2}')
     .topic(v-for="(topic, index) in topicsList.topics2" :style="{   \
       width: topic.width != null && (topic.width/(topic.size ||1)) +'em',   \
@@ -15,7 +15,7 @@ div.wrapper
       'font-size': topic.size + 'em',\
       transform: `translate3d(${topic.x||0/(topic.size ||1)}em, ${topic.y||0/(topic.size ||1)}em, 0)` \
       }" :key="index" :class="{'bullet': !(topic.bullet == false) }")
-      span(v-html="topic.text")
+      span.line(v-html="topic.text")
 </template>
 <script lang="ts">
 import appTextTyping from './text-typing.vue';
@@ -90,7 +90,7 @@ export default defineComponent({
   margin-top: 2em;
   line-height: 1.5;
 }
-.topic span {
+.topic span.line {
   word-break: break-word;
   max-width: 100%;
   font-size: 2em;
